@@ -1,5 +1,22 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This is a quick and dirty demo, originally created to demonstrate some of the differences between the styled-components and typestyle libraries.
+
+Comment out only the <Demo X/> component in the App.tsx file for the demo you want to run. This will ensure only necessary code is built and you'll be easily able to inspect what is going on in the style tag in the head.
+
+## Demo 1
+
+- Dynamic styling
+- Debugging (comment out \$debugName in button.style.tsx to see this in action)
+
+## Demo 2
+
+- Deduping / class consolidation - demonstrates typestyle styles breaking because of its automatic deduping and order of imports of SomeComponent and Button2 in Demo2.tsx
+
+## Demo 3
+
+- CSS variables - demonstrates a problem where OOTB it's tricky to override CSS variables in an isolated container due to such strong typing
+
 ## Available Scripts
 
 In the project directory, you can run:
